@@ -5,7 +5,7 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
-  { ignores: ['dist'] },
+  { ignores: ['dist', 'eslint.config.js'] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
@@ -23,6 +23,11 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      'semi': ['error', 'always', { 'omitLastInOneLineBlock': false }],
+      'comma-dangle': ['error', 'never'],
+      quotes: ['error', 'single'],
+      'react/prop-types': [0],
+      'indent': ['error', 'tab']
     },
   },
 )
