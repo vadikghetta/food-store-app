@@ -27,7 +27,7 @@ export function Layout() {
 
 			</div>
 			<Button className={styles['exit']} >
-				<img src="/exit-icon.svg" alt="Иконка выхода" />
+				<img src="/src/assets/svg/exit.svg" alt="Иконка выхода" />
 				Выход
 			</Button>
 		</div>
