@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from 'react-router';
 import styles from './styles.module.css';
-import Button from '../../ui/button/button';
+import Button from '../../shared/ui/button/button';
 import clsx from 'clsx';
 
 

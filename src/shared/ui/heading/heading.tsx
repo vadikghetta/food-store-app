@@ -1,4 +1,4 @@
-import styles from './Headling.module.css';
+import styles from './Heading.module.css';
 import clsx from 'clsx';
 import { HeadlingProps } from './heading.props';
 
